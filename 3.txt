@@ -1,0 +1,19 @@
+3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
+
+q@q:~$ sudo apt update
+q@q:~$ sudo apt install mysql-server
+
+   - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+
+q@q:~$ sudo apt update
+q@q:~$ sudo apt install wget -y
+q@q:~$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+q@q:~$ sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+
+Замена MySQL 8.0 на MySQL 5.7
+
+q@q:~$ sudo apt-get update
+q@q:~$ sudo apt-cache policy mysql-server
+q@q:~$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29
+q@q:~$ sudo apt update
+q@q:~$ sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
