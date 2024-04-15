@@ -1,0 +1,10 @@
+2. Работа с директориями в Linux
+
+   - Создать новую директорию и переместить туда файл "Human Friends".
+
+q@q:~$ mkdir NewDir
+q@q:~$ mv HumanFriends NewDir
+q@q:~$ cd NewDir/
+q@q:~/NewDir$ ls
+HumanFriends
+q@q:~/NewDir$
