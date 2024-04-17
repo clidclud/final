@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" modified="2024-04-17T09:13:42.781Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="OsI4gNKv9fhf1RYeR3mI" version="24.2.5" type="device">
+  <diagram name="Страница — 1" id="xyapqsgghkmzyhZaw5ei">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tqRYrHg27qCfae74N_fM-24" value="Animals" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="344" y="262" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-25" target="tqRYrHg27qCfae74N_fM-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-44" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="tqRYrHg27qCfae74N_fM-43" vertex="1" connectable="0">
+          <mxGeometry x="0.0306" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="scFXdvp-65slRcMgrGii-1" value="&lt;p style=&quot;line-height: 108%; margin-bottom: 0.28cm;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;6. Диаграмма классов&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 108%; margin-bottom: 0.28cm;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Создать диаграмму классов с родительским классом &quot;Животные&quot;, и двумя подклассами: &quot;Pets&quot; и &quot;Pack animals&quot;.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 108%; margin-bottom: 0.28cm;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;В составы классов которых в случае Pets войдут классы: собаки, кошки, хомяки, а в класс Pack animals войдут: Лошади, верблюды и ослы).&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 108%; margin-bottom: 0.28cm;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Каждый тип животных будет характеризоваться (например, имена, даты рождения, выполняемые команды и т.д)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 108%; margin-bottom: 0.28cm;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Диаграмму можно нарисовать в любом редакторе, такими как Lucidchart, Draw.io, Microsoft Visio и других.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="39" y="80" width="750" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-25" value="PackAnimals" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="444" y="362" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-26" target="tqRYrHg27qCfae74N_fM-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-46" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="tqRYrHg27qCfae74N_fM-45" vertex="1" connectable="0">
+          <mxGeometry x="0.0161" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-26" value="Pets" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="244" y="362" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-27" target="tqRYrHg27qCfae74N_fM-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="358" y="412" />
+              <mxPoint x="144" y="412" />
+              <mxPoint x="144" y="374" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-27" value="Hamsters" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="308" y="433.95" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-28" target="tqRYrHg27qCfae74N_fM-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="244" y="412" />
+              <mxPoint x="144" y="412" />
+              <mxPoint x="144" y="374" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-62" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="tqRYrHg27qCfae74N_fM-60" vertex="1" connectable="0">
+          <mxGeometry x="-0.6925" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-28" value="Cats" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="194" y="433.95" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-29" target="tqRYrHg27qCfae74N_fM-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="144" y="374" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-29" value="Dogs" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="84" y="433.95" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-31" target="tqRYrHg27qCfae74N_fM-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="584" y="412" />
+              <mxPoint x="694" y="412" />
+              <mxPoint x="694" y="374" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-31" value="Horses" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="534" y="433.95" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-32" target="tqRYrHg27qCfae74N_fM-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="412" />
+              <mxPoint x="694" y="412" />
+              <mxPoint x="694" y="374" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-67" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="tqRYrHg27qCfae74N_fM-66" vertex="1" connectable="0">
+          <mxGeometry x="-0.4004" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-32" value="Camels" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="424" y="433.95" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" parent="1" source="tqRYrHg27qCfae74N_fM-33" target="tqRYrHg27qCfae74N_fM-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="694" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-33" value="Donkeys" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="644" y="433.95" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-38" value="String name" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="344" y="282" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-39" value="String birthDate" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="344" y="302" width="100" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="tqRYrHg27qCfae74N_fM-49" value="String [] command" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="344" y="327" width="100" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

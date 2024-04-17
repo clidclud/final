@@ -1,0 +1,74 @@
+7. Работа с MySQL (Задача выполняется в случае успешного выполнения задачи “Работа с MySQL в Linux. “Установить MySQL на вашу машину”
+
+7.1. После создания диаграммы классов в 6 пункте, в 7 пункте база данных "Human Friends" должна быть структурирована в соответствии с этой диаграммой. Например, можно создать таблицы, которые будут соответствовать классам "Pets" и "Pack animals", и в этих таблицах будут поля, которые характеризуют каждый тип животных (например, имена, даты рождения, выполняемые команды и т.д.). 
+
+7.2     - В ранее подключенном MySQL создать базу данных с названием "Human Friends".
+        - Создать таблицы, соответствующие иерархии из вашей диаграммы классов.
+
+DROP DATABASE IF EXISTS humanFriends;
+CREATE DATABASE humanFriends;
+USE humanFriends;
+
+DROP TABLE IF EXISTS pets;
+CREATE TABLE pets (id INT AUTO_INCREMENT PRIMARY KEY,
+					nameAnimal VARCHAR(45) NOT NULL,
+                    typeAnimal VARCHAR(45) NOT NULL,
+                    birthDate DATE NOT NULL,
+                    commandsAnimal VARCHAR(200));
+
+                    
+DROP TABLE IF EXISTS packAnimals;
+CREATE TABLE packAnimals (id INT AUTO_INCREMENT PRIMARY KEY,
+							nameAnimal VARCHAR(45) NOT NULL,
+                            typeAnimal VARCHAR(45) NOT NULL,
+							birthDate DATE NOT NULL,
+							commandsAnimal VARCHAR(200));
+
+   - Заполнить таблицы данными о животных, их командах и датами рождения.
+
+INSERT INTO pets (nameAnimal,  typeAnimal, birthDate, commandsAnimal) VALUES
+    ('Fido', 'Dog', '2020-01-01', 'Sit, Stay, Fetch'),
+    ('Whiskers', 'Cat', '2019-05-15', 'Sit, Pounce'),
+    ('Hammy', 'Hamster', '2021-03-10', 'Roll, Hide'),
+    ('Buddy', 'Dog', '2018-12-10', 'Sit, Paw, Bark'),
+    ('Smudge', 'Cat', '2020-02-20', 'Sit, Pounce, Scratch'),
+    ('Peanut', 'Hamster', '2021-08-01', 'Roll, Spin'),
+    ('Bella', 'Dog', '2019-11-11', 'Sit, Stay, Roll'),
+    ('Oliver', 'Cat', '2020-06-30', 'Meow, Scratch, Jump');
+    
+INSERT INTO packAnimals (nameAnimal,  typeAnimal, birthDate, commandsAnimal) VALUES
+    ('Thunder', 'Horse', '2015-07-21', 'Trot, Canter, Gallop'),
+    ('Sandy', 'Camel', '2016-11-03', 'Walk, Carry Load'),
+    ('Eeyore', 'Donkey', '2017-09-18', 'Walk, Carry Load, Bray'),
+    ('Storm', 'Horse', '2014-05-05', 'Trot, Canter'),
+    ('Dune', 'Camel', '2018-12-12', 'Walk, Sit'),
+    ('Burro', 'Donkey', '2019-01-23', 'Walk, Bray, Kick'),
+    ('Blaze', 'Horse', '2016-02-29', 'Trot, Jump, Gallop'),
+    ('Sahara', 'Camel', '2015-08-14', 'Walk, Run');
+
+SELECT * FROM pets;
+SELECT * FROM packAnimals;
+
+   - Удалить записи о верблюдах и объединить таблицы лошадей и ослов.
+
+DELETE FROM packAnimals WHERE typeAnimal = 'Camel';
+SELECT * FROM packAnimals;
+
+   - Создать новую таблицу для животных в возрасте от 1 до 3 лет и вычислить их возраст с точностью до месяца.
+
+DROP TABLE IF EXISTS ageAnimals;
+CREATE TABLE ageAnimals (id INT AUTO_INCREMENT PRIMARY KEY,
+							nameAnimal VARCHAR(45) NOT NULL,
+                            typeAnimal VARCHAR(45) NOT NULL,
+							birthDate DATE NOT NULL,
+							age INT);
+                            
+INSERT INTO ageAnimals (nameAnimal, typeAnimal, birthDate, age)
+SELECT p.nameAnimal, p.typeAnimal, p.birthDate, TIMESTAMPDIFF(MONTH, p.birthDate, NOW()) / 12 AS age
+FROM pets AS p LEFT OUTER JOIN packAnimals AS pa ON p.id = pa.id
+WHERE TIMESTAMPDIFF(MONTH, p.birthDate, NOW()) BETWEEN 12 AND 36;
+SELECT * FROM ageAnimals;
+
+   - Объединить все созданные таблицы в одну, сохраняя информацию о принадлежности к исходным таблицам.
+
+SELECT * FROM pets LEFT OUTER JOIN packAnimals ON pets.id = packAnimals.id;
